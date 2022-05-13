@@ -12,7 +12,7 @@ Target variable: IS_SUCCESSFUL
 
 Columns removed: EIN, NAME 
 
-Features for the model: Rest of the columns 
+Features for the model: Rest of the columns (Categorical variables were one hot encoded)
 
 Neural network model design and accuracy: 
 
@@ -26,7 +26,7 @@ Target variable: IS_SUCCESSFUL
 
 Columns removed: EIN 
 
-Features for the model: Rest of the columns 
+Features for the model: Rest of the columns (Categorical variables were one hot encoded)
 
 Neural network model design and accuracy: 
 
@@ -36,7 +36,4 @@ Neural network model design and accuracy:
 
 ## Summary:
 
-
-
-
-
+Keeping the NAME column had the most impact when comparing the original model with the third optimized one. Overall, even though the results appear to be good enough, I believe a RandomForestClassifier model can also obtain similar accuracy. The relatively higher interpretability of that model might make it preferable for this dataset.
